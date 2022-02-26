@@ -1,0 +1,91 @@
+body {
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+/* typography */
+h1 {
+  font-weight: 400;
+  color: #143774;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-weight: 700;
+  color: #1792d2;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+/* layout */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+  background: #fafafa;
+  padding: 2em 0;
+}
+
+/* layout */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  /* margin: 0 1em; it two on the side so we are taking 2em */
+  margin-left: 2em;
+}
+
+/* padding makes your button a little bit bigger and it makes it easier to click on */
+nav a {
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+  padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #1792d4;
+}
+
+.current-page{
+    border-bottom: 2px solid #707070;
+}
+
+.current-page:hover{
+    color: #707070;
+}
+
+
+@media (max-width: 675px){
+    .container-nav{
+        flex-direction: column;
+        /* text-align: center; */
+    }
+
+    header{
+        text-align: center;
+    }
+
+    nav ul {
+       flex-direction: column;
+      }
+
+    nav li {
+        margin: .5em 0;
+    }
+}
